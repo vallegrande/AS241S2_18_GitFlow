@@ -1,0 +1,203 @@
+:root {
+    --color-fondo: #f0f0f0;
+    --color-principal: #007bff;
+    --color-secundario: #28a745;
+    --color-encabezado: #343a40;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+    color: var(--color-principal);
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-principal);
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    background-color: var(--color-fondo);
+    height: 80px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 5rem;
+    border-radius: 10px;
+}
+
+header .logo img:hover {
+    cursor: pointer;
+}
+
+header nav ul {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav ul li {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+header nav ul li:hover {
+    color: var(--color-secundario);
+    cursor: pointer;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--color-fondo);
+}
+
+.reloj {
+    font-size: 18px;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.reloj-container {
+    display: flex;
+    align-items: center;
+}
+
+section.banner {
+    background-image: url(https://th.bing.com/th/id/OIP.3QRRVJbYBxrtTY0scxOkawHaE8?rs=1&pid=ImgDetMain);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section.banner h1 {
+    font-size: 10rem;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+section.banner p {
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+section.banner button {
+    border: none;
+    background-color: var(--color-principal);
+    color: white;
+    border-radius: 3rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1.8rem 2.7rem;
+    margin: 2rem 0;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+section.banner button:hover {
+    cursor: pointer;
+    transform: scale(1.04);
+    background-color: var(--color-secundario);
+}
+
+footer {
+    background-color: var(--color-fondo);
+    padding: 4rem 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer section.contenedor {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+footer .logo img {
+    width: 70%;
+    border-radius: 50%;
+}
+
+footer .menuSecundario {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    justify-content: space-evenly;
+}
+
+footer .menuSecundario ul li {
+    font-size: 1.5rem;
+    padding: 1.2rem;
+}
+
+footer .menuSecundario ul li:hover {
+    color: var(--color-secundario);
+    cursor: pointer;
+}
+
+footer .menuSecundario ul .encabezado {
+    color: var(--color-encabezado);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+section.informacion {
+    padding: 4rem 0;
+    background-color: var(--color-fondo);
+}
+
+section.informacion h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--color-principal);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+section.informacion p {
+    font-size: 1.6rem;
+    color: #000;
+    text-align: center;
+    line-height: 1.8;
+    margin: 0 auto;
+    width: 70%;
+}
